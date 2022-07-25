@@ -1,5 +1,8 @@
-def make_user(name, age):
-    return {'name': name, 'age': age}
-
-def format_user(user):
-    return str(user.get('name')) + ',' + str(user.get('age'))
+def count_all(items):
+    result = {}
+    for item in items:
+        if item not in result:
+                result[item] = 1
+        else:
+                result[item] = result[item] + 1
+    return result
